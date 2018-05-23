@@ -11,3 +11,5 @@ Those files are made available for people who don't have icc right now.
 .gcc .icc: dumps
 
 .gcc.s .icc.s: only main()
+
+![diff](gcc-icc_td2d.jpg "diff on main")
