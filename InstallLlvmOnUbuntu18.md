@@ -18,7 +18,7 @@ Opam is a package manager for Ocaml; we will use it to install the latest Ocaml 
     
 (wait a bit)
 
-If you're on 16.04/xenial bubblewrap, you'll need to:
+If you're on 16.04/xenial, there is no package `bubblewrap`, so you'll need to:
 
     sudo apt-get install software-properties-common python3-software-properties && \
     sudo add-apt-repository ppa:ansible/bubblewrap && \
