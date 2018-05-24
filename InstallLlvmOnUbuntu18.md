@@ -27,5 +27,7 @@ If you're on 16.04/xenial, there is no package `bubblewrap`, so you'll need to:
 
 Now let's pick the Ocaml version you want:
 
-    opam switch list-available &&\
-    opam switch create . 4.08.0+trunk
+    opam switch list-available && \
+    opam switch create . 4.08.0+trunk && \
+    opam install merlin && \
+    opam user-setup install
