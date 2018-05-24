@@ -13,6 +13,6 @@ Opam is a package manager for Ocaml; we will use it to install the latest Ocaml 
     chmod 755 install.sh && \
     sudo ./install.sh && \
     sudo apt install make m4 git darcs mercurial bubblewrap && \
-    opam inity
+    opam init
     
 (wait a bit)
