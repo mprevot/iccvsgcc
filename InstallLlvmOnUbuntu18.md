@@ -40,7 +40,7 @@ In particular, to get ocaml static analysis work on vscode windows with ocaml/op
 [**OCaml and Reason IDE - for WSL**](https://marketplace.visualstudio.com/items?itemName=raiscui.reasonml-wsl).
 You'll need to make sure that `~/.opam/default/bin/` is in your path:
 
-    echo "export PATH=~/.opam/default/bin/;%PATH" >> .bashrc
+    echo "export PATH=~/.opam/default/bin/;$PATH" >> .bashrc
     
 Configure the extension, then it should work fine. You can eventually activate **codelens** for ocaml. 
 
