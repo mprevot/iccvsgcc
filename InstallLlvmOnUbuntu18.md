@@ -24,3 +24,8 @@ If you're on 16.04/xenial, there is no package `bubblewrap`, so you'll need to:
     sudo add-apt-repository ppa:ansible/bubblewrap && \
     sudo apt-get update && \
     sudo apt install bubblewrap
+
+Now let's pick the Ocaml version you want:
+
+    opam switch list-available &&\
+    opam switch create . 4.08.0+trunk
