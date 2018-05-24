@@ -7,7 +7,7 @@
     update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-6.0 100 && \
     update-alternatives --install /usr/bin/clang clang /usr/bin/clang-6.0 100
 ## Installing latest Ocaml and Opam
-Opam is a package manager for Ocaml; we will use it to install the latest Ocaml (bionic apt repo is not yet up to date).
+Opam is a package manager for Ocaml; we will use it to install the latest Ocaml (18.04/bionic apt repo is not yet up to date).
 
     wget https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh && \
     chmod 755 install.sh && \
@@ -17,3 +17,7 @@ Opam is a package manager for Ocaml; we will use it to install the latest Ocaml 
     eval $(opam env)
     
 (wait a bit)
+
+If you're on 16.04/xenial bubblewrap, you'll need to:
+
+    sudo apt-get install software-properties-common python3-software-properties
