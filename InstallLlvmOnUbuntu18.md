@@ -44,3 +44,5 @@ You'll need to make sure that `~/.opam/default/bin/` is in your path:
     
 Configure the extension, then it should work fine. You can eventually activate **codelens** for ocaml. 
 
+### Add bucklescript for more static analysis
+You might eventually want to add also the [BuckleScript](https://github.com/BuckleScript/bucklescript/wiki/Installation) to work with merlin; but bucklescript works with a specific edition of ocaml (4.02.3+buckle-1), that you can install with `opam update && opam switch 4.02.3+buckle-1` (and then you can switch between different editions of ocaml with `ocaml switch set XXX` (list those installed them with `ocaml switch list`)).
