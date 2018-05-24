@@ -8,7 +8,7 @@
     update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-6.0 100 && \
     update-alternatives --install /usr/bin/clang clang /usr/bin/clang-6.0 100
 
-## Installing latest Ocaml and Opam
+## Installing latest Ocaml and Opam and merlin
 Opam is a package manager for Ocaml; we will use it to install the latest Ocaml (18.04/bionic apt repo is not yet up to date).
 
     wget https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh && \
