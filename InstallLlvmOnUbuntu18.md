@@ -1,4 +1,5 @@
-# Installing LLVM 6 on Ubuntu 18.04
+# Installing c, c++, ocaml and setup a friendly development environment to create compiler
+## Installing LLVM 6 on Ubuntu 18.04
 
     wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add - && \
     sudo apt-add-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-6.0 main" && \
@@ -6,6 +7,7 @@
     sudo apt-get install -y clang-6.0 && \
     update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-6.0 100 && \
     update-alternatives --install /usr/bin/clang clang /usr/bin/clang-6.0 100
+
 ## Installing latest Ocaml and Opam
 Opam is a package manager for Ocaml; we will use it to install the latest Ocaml (18.04/bionic apt repo is not yet up to date).
 
@@ -31,3 +33,14 @@ Now let's pick the Ocaml version you want:
     opam switch create . 4.08.0+trunk && \
     opam install merlin && \
     opam user-setup install
+
+### Setup a crossplatform VScode to develop under Windows 10 using GNU/Linux tools
+Just install [Visual Studio Code (vscode)](https://code.visualstudio.com/) for Windows.
+In particular, to get ocaml static analysis work on vscode windows with ocaml/opam/merlin for linux, you need to use the extension
+[**OCaml and Reason IDE - for WSL**](https://marketplace.visualstudio.com/items?itemName=raiscui.reasonml-wsl).
+You'll need to make sure that `~/.opam/default/bin/` is in your path:
+
+    echo "export PATH=~/.opam/default/bin/;%PATH" >> .bashrc
+    
+Configure the extension, then it should work fine. You can eventually activate **codelens** for ocaml. 
+
