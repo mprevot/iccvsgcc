@@ -46,3 +46,9 @@ Configure the extension, then it should work fine. You can eventually activate *
 
 ### Add bucklescript for more static analysis
 You might eventually want to add also the [BuckleScript](https://github.com/BuckleScript/bucklescript/wiki/Installation) to work with merlin; but bucklescript works with a specific edition of ocaml (4.02.3+buckle-1), that you can install with `opam update && opam switch 4.02.3+buckle-1` (and then you can switch between different editions of ocaml with `ocaml switch set XXX` (list those installed them with `ocaml switch list`)).
+### Add multicore ocaml compiler
+    opam remote add multicore https://github.com/ocamllabs/multicore-opam.git && \
+    opam switch 4.06.1+multicore
+Sources: [https://github.com/ocamllabs/ocaml-multicore](https://github.com/ocamllabs/ocaml-multicore)
+
+[Effective Concurrency with Algebraic Effects](http://kcsrk.info/ocaml/multicore/2015/05/20/effects-multicore/)
