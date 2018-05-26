@@ -1,0 +1,25 @@
+{
+    "editor.tabSize": 4,
+    "editor.fontSize": 11,
+    "terminal.integrated.fontSize": 11,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "update.channel": "none",
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Solarized Light",
+    "explorer.confirmDragAndDrop": false,
+    "git.ignoreMissingGitWarning": true,
+    "git.enabled": true,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\bash.exe",
+    "editor.formatOnSave": true,
+    "reason.command.useWSL": true,
+    "reason.command.shell": "C:\\WINDOWS\\System32\\bash.exe",
+    "reason.command.shellargs": [
+        "-ic"
+    ],
+    "reason.codelens.enabled": true
+}
