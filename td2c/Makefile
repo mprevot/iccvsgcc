@@ -7,3 +7,5 @@ td2dcx: td2dc
 	./td2dc_i
 td2dcd: td2dc
 	gdb ./td2dc_i
+clean:
+	rm *_i *_g *icc *gcc > /dev/null 2>&1 &
