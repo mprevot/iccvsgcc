@@ -55,6 +55,7 @@ You might eventually want to add also the [BuckleScript](https://github.com/Buck
 
     opam remote add multicore https://github.com/ocamllabs/multicore-opam.git && \
     opam switch 4.06.1+multicore
+
 Sources: [https://github.com/ocamllabs/ocaml-multicore](https://github.com/ocamllabs/ocaml-multicore)
 
 [Effective Concurrency with Algebraic Effects](http://kcsrk.info/ocaml/multicore/2015/05/20/effects-multicore/)
