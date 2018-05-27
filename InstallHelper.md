@@ -54,6 +54,8 @@ You might eventually want to add also the [BuckleScript](https://github.com/Buck
 ### Add multicore ocaml compiler
 
     opam remote add multicore https://github.com/ocamllabs/multicore-opam.git && \
+    opam repository add multicore --all-switches
+    opam switch install 4.06.1+multicore
     opam switch 4.06.1+multicore
 
 Sources: [https://github.com/ocamllabs/ocaml-multicore](https://github.com/ocamllabs/ocaml-multicore)
